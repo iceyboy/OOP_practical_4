@@ -1,4 +1,4 @@
-package part01;
+package part02;
 
 public enum Genre {
 	
@@ -14,7 +14,7 @@ public enum Genre {
 		spelling = str;
 		
 	}
-		
+	
 	public String getSpelling() {
 		
 		return spelling;
