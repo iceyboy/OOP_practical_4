@@ -1,4 +1,4 @@
-package part02;
+package part03;
 
 import java.util.Scanner;
 
@@ -18,11 +18,36 @@ public class Menu {
 
 	public int getUserChoice() {
 		
+		
+		
 		display();
+		int value = 0;
+		
+		do {
 		
 		System.out.print("Enter Selection: ");
 		
-		int value = input.nextInt();
+		try {
+		
+		value = input.nextInt();
+		
+
+		if((value < 1 || value > 3)) {
+		
+		System.out.println("Invalid Response ");
+		
+		}
+		
+		} catch (Exception e) {
+	         
+	           input.next();
+	           System.out.println("Invalid Response ");
+	           
+	        }
+		
+		
+		
+		}while(value < 1 || value > 3);
 		
 		return value;
 		
