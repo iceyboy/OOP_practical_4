@@ -1,4 +1,4 @@
-package part02;
+package part03;
 
 public enum Genre {
 	
